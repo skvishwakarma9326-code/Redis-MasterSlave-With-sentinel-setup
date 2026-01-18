@@ -166,10 +166,10 @@ OS: Ubuntu 20.04+ / CentOS 8+ / RHEL 8+
 
 ```bash
 # Download the script
-wget https://your-repo/redis_setup.sh
+wget https://github.com/skvishwakarma9326-code/Redis-MasterSlave-With-sentinel-setup/blob/main/normal_redis_acl_sen_mem_cpu.sh
 
 # Make executable
-chmod +x redis_setup.sh
+chmod +x normal_redis_acl_sen_mem_cpu.sh
 
 # Create log directory
 mkdir -p temp_log
@@ -181,7 +181,7 @@ Edit the script and set your master IP:
 
 ```bash
 # Open the script
-nano redis_setup.sh
+nano normal_redis_acl_sen_mem_cpu.sh
 
 # Change this line to your actual master IP
 MASTER_IP="192.168.1.42"  # Replace with your server IP
@@ -191,7 +191,7 @@ MASTER_IP="192.168.1.42"  # Replace with your server IP
 
 ```bash
 # Execute with sudo
-sudo ./redis_setup.sh
+sudo ./normal_redis_acl_sen_mem_cpu.sh
 ```
 
 ### 4. Start Services
@@ -896,7 +896,7 @@ This setup script is provided as-is for production use. Modify according to your
 ## 🤝 Support
 
 For issues or questions:
-1. Check logs: `tail -f temp_log/redis_setup_*.log`
+1. Check logs: `tail -f temp_log/normal_redis_acl_sen_mem_cpu_*.log`
 2. Review systemd logs: `journalctl -u redis-server-6271.service`
 3. Verify configuration files in `/etc/systemd/system/`
 
